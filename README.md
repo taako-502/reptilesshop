@@ -1,5 +1,6 @@
 # reptilesshop
  爬虫類ショップをイメージしたWordPressのテーマです。
+
 # Beans WordPress theme framework
 
 [![Build Status](https://travis-ci.org/Getbeans/Beans.svg?branch=development)](https://travis-ci.org/Getbeans/Beans)
