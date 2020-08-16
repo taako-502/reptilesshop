@@ -18,11 +18,10 @@ get_header();
 	<main id="primary" class="site-main">
 		<div class="container">
 			<div class="row">
-				<div class="home-area col-md-9">
+				<div class="main-area col-md-9">
 					<div class="article-area col-md-12">
 						<?php
 					if ( have_posts() ) :
-
 							?>
 							<header>
 								<h1 class="page-title">記事一覧</h1>
