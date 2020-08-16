@@ -1,0 +1,13 @@
+@charset "UTF-8";
+.site-main{
+  background-color: red;
+}
+#secondary{
+  background-color: yellow;
+}
+.site-footer{
+  background-color: blue;
+}
+.site-header{
+  background-color: pink;
+}
