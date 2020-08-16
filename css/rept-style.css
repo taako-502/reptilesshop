@@ -1,13 +1,32 @@
 @charset "UTF-8";
-.site-main{
-  background-color: red;
+body {
+  background-color: whitesmoke;
 }
-#secondary{
-  background-color: yellow;
+/* ワイヤー部分 */
+div.entry-content{
+  width:90%;
+  margin:10px 0 20px 0;
+  padding:20px 30px;
+  box-shadow: 2px 2px 5px 0 gray ;
+}
+div.entry-content  * {
+  /* 影の設定が子孫に反映されるため、解除 */
+  box-shadow: none ;
+}
+.site-sidebar{
+  background-color: white;
+  width: 100%;
+  margin:10px 0 20px 0;
+  padding:20px 15px;
+  box-shadow: 2px 2px 5px 0 gray ;
 }
 .site-footer{
   background-color: blue;
 }
 .site-header{
   background-color: pink;
+}
+/* トップページのサムネイル */
+.size-post-thumbnail {
+  max-width: 50%;
 }

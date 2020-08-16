@@ -15,9 +15,9 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+	<main id="primary" class="site-main container">
 		<div class="row">
-			<div class="col-md-9">
+			<div class="entry-content col-md-9">
 			<?php
 			if ( have_posts() ) :
 
