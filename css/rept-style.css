@@ -4,9 +4,9 @@ body {
 }
 /* ワイヤー部分 */
 div.main-area{
-  width:90%;
-  margin:10px 0 20px 0;
-  padding:20px 30px;
+  width: 90%;
+  margin: 40px 0 40px 0;
+  padding: 20px 30px;
   box-shadow: 2px 2px 5px 0 gray ;
   background-color: white;
 }
@@ -17,7 +17,7 @@ div.main-area * {
 .site-sidebar{
   background-color: white;
   width: 100%;
-  margin:10px 0 20px 0;
+  margin:40px 0 40px 0;
   padding:20px 15px;
   box-shadow: 2px 2px 5px 0 gray ;
 }
@@ -47,7 +47,53 @@ div.main-area * {
   height:90%;
   box-shadow: 2px 2px 5px 0 gray !Important ;
 }
-/* サイドバー */
+/****** ヘッダー ******/
+header#masthead{
+  background-color: #DDDDDD	;
+}
+div.site-branding {
+  display:flex;
+}
+/* カスタマーヘッダー */
+img.cus-header-img {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+p.cus-header-area{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/* サイトタイトル */
+div.site-title-area{
+  padding-right:5px;
+}
+h1.site-title {
+  color: #333333;
+  font-size: 42px;
+  display:inline;
+  margin: 5px 10px 0 20px;
+}
+/* サイトディスクリプション */
+div.discription-area{
+
+}
+p.site-description {
+  margin-left: 20px;
+}
+/* メニュー */
+div.menu-area {
+  float:right;
+}
+div.menu-area ul{
+  list-style:none;
+  display:flex;
+}
+div.menu-area li{
+  padding: 2px;
+  margin: 5px;
+}
+/****** サイドバー ******/
 .site-sidebar h2 {
   font-size:24px;
   border-bottom: 2px solid blue;
