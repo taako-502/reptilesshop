@@ -81,16 +81,31 @@ p.site-description {
   margin-left: 20px;
 }
 /* メニュー */
+div.site-branding {
+  background-color: #333;
+}
 div.menu-area {
   float:right;
+}
+h1.site-title a {
+  color: white;
+}
+p.site-description{
+  color:white;
 }
 div.menu-area ul{
   list-style:none;
   display:flex;
 }
 div.menu-area li{
-  padding: 2px;
-  margin: 5px;
+  background-color: #333;
+  padding: 8px 6px;
+  margin: 5px 2px;
+  border: 1.5px solid white;
+  border-radius: 1px;
+}
+div.menu-area li a{
+  color: white;
 }
 /****** サイドバー ******/
 .site-sidebar h2 {
@@ -102,7 +117,7 @@ div.menu-area li{
   margin-left: 0;
   padding-left: 5px;
 }
-/* フッター */
+/****** フッター ******/
 footer#colophon{
   background-color: #333;
   padding:10px 0 10px 20px;
