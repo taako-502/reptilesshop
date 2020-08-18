@@ -87,8 +87,13 @@ div.site-branding {
 div.menu-area {
   float:right;
 }
-h1.site-title a {
+h1.site-title a,
+p.site-title a {
   color: white;
+}
+p.site-title a{
+  font-size: 25px;
+  margin: 5px 0 0 15px;
 }
 p.site-description{
   color:white;
