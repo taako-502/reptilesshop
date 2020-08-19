@@ -3,7 +3,7 @@ body {
   background-color: whitesmoke;
 }
 /* ワイヤー部分 */
-div.main-area{
+div.main-area {
   width: 90%;
   margin: 40px 0 40px 0;
   padding: 20px 30px;
@@ -14,17 +14,17 @@ div.main-area * {
   /* 影の設定が子孫に反映されるため、解除 */
   box-shadow: none ;
 }
-.site-sidebar{
+.site-sidebar {
   background-color: white;
   width: 100%;
   margin:40px 0 40px 0;
   padding:20px 15px;
   box-shadow: 2px 2px 5px 0 gray ;
 }
-.site-footer{
+.site-footer {
   background-color: blue;
 }
-.site-header{
+.site-header {
   background-color: white;
 }
 /* トップページのサムネイル */
@@ -39,7 +39,7 @@ div.main-area * {
   margin: auto;
   max-width: 95%;
 }
-.article-describe{
+.article-describe {
   width:50px;
 }
 .article-one {
@@ -48,7 +48,7 @@ div.main-area * {
   box-shadow: 2px 2px 5px 0 gray !Important ;
 }
 /****** ヘッダー ******/
-header#masthead{
+header#masthead {
   background-color: #DDDDDD	;
 }
 div.site-branding {
@@ -60,12 +60,12 @@ img.cus-header-img {
   margin-left:auto;
   margin-right:auto;
 }
-p.cus-header-area{
+p.cus-header-area {
   padding-top: 5px;
   padding-bottom: 5px;
 }
 /* サイトタイトル */
-div.site-title-area{
+div.site-title-area {
   padding-right:5px;
 }
 h1.site-title {
@@ -74,7 +74,7 @@ h1.site-title {
   margin: 5px 10px 0 20px;
 }
 /* サイトディスクリプション */
-div.discription-area{
+div.discription-area {
 
 }
 p.site-description {
@@ -87,29 +87,24 @@ div.site-branding {
 div.menu-area {
   float:right;
 }
-h1.site-title a,
-p.site-title a {
+h1.site-title a {
   color: white;
 }
-p.site-title a{
-  font-size: 25px;
-  margin: 5px 0 0 15px;
-}
-p.site-description{
+p.site-description {
   color:white;
 }
-div.menu-area ul{
+div.menu-area ul {
   list-style:none;
   display:flex;
 }
-div.menu-area li{
+div.menu-area li {
   background-color: #333;
   padding: 8px 6px;
   margin: 5px 2px;
   border: 1.5px solid white;
   border-radius: 1px;
 }
-div.menu-area li a{
+div.menu-area li a {
   color: white;
 }
 /****** サイドバー ******/
@@ -123,7 +118,7 @@ div.menu-area li a{
   padding-left: 5px;
 }
 /****** フッター ******/
-footer#colophon{
+footer#colophon {
   background-color: #333;
   padding:10px 0 10px 20px;
 }
