@@ -14,19 +14,17 @@
 
 get_header();
 ?>
-
 	<main id="primary" class="site-main">
 		<div class="container">
 			<div class="row">
 				<div class="main-area col-md-9">
-					<div class="article-area col-md-12">
 						<?php
 					if ( have_posts() ) :
-							?>
-							<header>
-								<h1 class="page-title">記事一覧</h1>
-							</header>
-							<?php
+						?>
+						<header>
+							<h1 class="page-title">記事一覧</h1>
+						</header>
+						<?php
 						/* Start the Loop */
 						while ( have_posts() ) :
 							the_post();
@@ -35,7 +33,7 @@ get_header();
 							 * If you want to override this in a child theme, then include a file
 							 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
 							 */
-							get_template_part( 'template-parts/content', 'home' );
+							get_template_part( 'template-parts/content', 'article' );
 						endwhile;
 						the_posts_navigation();
 					else :
@@ -43,7 +41,6 @@ get_header();
 						get_template_part( 'template-parts/content', 'none' );
 					endif;
 					?>
-					</div>
 				</div>
 				<div class="col-md-3">
 					<?php get_sidebar(); ?>
