@@ -32,7 +32,7 @@ div.main-area * {
   /*display:flex;*/
 }
 .size-post-thumbnail {
-  padding: 1%;
+  padding: 20px 1%;
 }
 .size-post-thumbnail img {
   display: block;
@@ -41,6 +41,10 @@ div.main-area * {
 }
 .article-describe {
   width:50px;
+  padding: 15px 20px 15px 20px;
+}
+div.article-describe p {
+  margin-left: 10px;
 }
 .article-one {
   width:90%;
