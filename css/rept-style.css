@@ -45,6 +45,15 @@ div.main-area * {
 }
 div.article-describe p {
   margin-left: 10px;
+  color: gray;
+}
+div.article-describe h3 {
+  color: #333;
+  font-size: 22px;
+  margin-bottom: 14px;
+}
+div.article-describe a {
+  text-decoration: none;
 }
 .article-one {
   width:90%;
@@ -76,6 +85,9 @@ h1.site-title {
   font-size: 42px;
   display:inline;
   margin: 5px 10px 0 20px;
+}
+h1.site-title a {
+  text-decoration: none;
 }
 /* サイトディスクリプション */
 div.discription-area {
