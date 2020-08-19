@@ -40,7 +40,6 @@ get_header();
 						// 記事が見つからなかった場合
 						get_template_part( 'template-parts/content', 'none' );
 					endif;
-					get_template_part('template-parts/content','related');
 					?>
 				</div>
 				<div class="col-md-3">

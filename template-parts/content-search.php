@@ -22,7 +22,6 @@
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
-
 	<?php reptilesshop_post_thumbnail(); ?>
 
 	<div class="entry-summary">
