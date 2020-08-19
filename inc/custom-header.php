@@ -21,7 +21,7 @@ function reptilesshop_custom_header_setup() {
 		apply_filters(
 			'reptilesshop_custom_header_args',
 			array(
-				'default-image'      => '',
+				'default-image'      => get_template_directory_uri() . '/images/reptilesshop_default.png',
 				'default-text-color' => '000000',
 				'width'              => 1000,
 				'height'             => 250,
