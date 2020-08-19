@@ -142,3 +142,70 @@ footer#colophon {
 .site-footer span {
   color: white;
 }
+/****** 部品 ******/
+/* 関連記事 */
+.relatedkiji {
+  margin: 40px 0 0;
+  padding: 10px;
+}
+.relatedkiji h4 {
+  font-size: 1.25em;
+  padding: 3px 5px;
+  border-bottom: solid 1px #999;
+}
+.relatedkiji ul {
+  font-size: 0;
+  margin: 10px 0;
+  padding: 0;
+}
+.relatedkiji li {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 25%;
+  padding: 10px 5px;
+  list-style: none;
+  vertical-align: top;
+}
+.relatedkiji li a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+.relatedkiji li a:hover {
+  color: #000070;
+  background-color: #eee;
+}
+.relatedkiji img {
+  height: 120px;
+  object-fit: cover;
+}
+.relatedkiji .text {
+  font-size: 16px;
+  font-weight: bold;
+}
+@media (max-width: 599px) {
+  .relatedkiji ul {
+    margin: 0;
+  }
+  .relatedkiji li {
+    display: block;
+    width: 100%;
+  }
+  .relatedkiji li a:after {
+    display: block;
+    clear: both;
+    content: '';
+  }
+  .relatedkiji img {
+    float: left;
+    width: 90px;
+    height: 70px;
+  }
+  .relatedkiji .text {
+    width: auto;
+    margin-top: 5px;
+    margin-left: 100px;
+  }
+}
