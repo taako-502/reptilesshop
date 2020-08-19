@@ -19,6 +19,8 @@ get_header();
 		<?php
 		while ( have_posts() ) :
 			the_post();
+			// パンくずリスト
+			get_template_part('template-parts/content','breadcrumbs');
 
 			get_template_part( 'template-parts/content', get_post_type() );
 
