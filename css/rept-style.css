@@ -225,14 +225,20 @@ div.table-of-contents:before {
     color:#000;  /* 文字の色 */
 }
 .table-of-contents li{
-  list-style-type:decimal;  /* マークの種類 */
   color: gray;
   margin-top:5px;
+}
+.table-of-contents ul {
+  counter-reset: section;
+  list-style: none;
+}
+.table-of-contents ul > li:before {
+    content : counters(section, '-') '. ';
+    counter-increment : section;
 }
 .table-of-contents li a{
   color: black;
 }
-/* パンくずリスト */
 /* パンくずリスト */
 .breadcrumb ul{
   list-style: none;
