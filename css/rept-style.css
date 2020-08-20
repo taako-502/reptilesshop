@@ -209,3 +209,25 @@ footer#colophon {
     margin-left: 100px;
   }
 }
+/* 目次 */
+div.table-of-contents {
+  border:solid 2px #7DB4EC;  /* 線の種類と色 */
+  padding: 15px 10px 15px 35px;  /* 枠内の余白（上右下左） */
+  margin: 1.5em 2em;
+  background:#f7f7f7;  /* 背景 */
+  font-size: 100%;  /* 文字サイズ */
+  border-radius:8px;/* 数字が大きいほど丸くなる */
+}
+div.table-of-contents:before {
+    content: "目次";
+    font-size: 110%;
+    font-weight:bold;   /* 文字の太さ　通常はnormal */
+    color:#000;  /* 文字の色 */
+}
+.table-of-contents li{
+  list-style-type:decimal;  /* マークの種類 */
+  color: gray;
+}
+.table-of-contents li a{
+  color: black;
+}

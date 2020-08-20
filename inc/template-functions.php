@@ -70,7 +70,7 @@ function insert_table_of_contents( $the_content ){
         $tag = '/^<h[2-6].*?>(.+?)<\/h[2-6]>$/im'; //見出しタグの検索パターン
         if(preg_match_all($tag, $the_content, $tags)) { //本文中に見出しタグが含まれていれば
             $idpattern = '/id *\= *["\'](.+?)["\']/i'; //見出しタグにidが定義されているか検索するパターン
-            $table_of_contents = '<div class="table_of_contents"><p class="title">＜目次＞</p><ul>';
+            $table_of_contents = '<div class="table-of-contents"><ul>';
             $idnum = 1;
             $nest = 0;
             $nestTag = array();
@@ -78,7 +78,8 @@ function insert_table_of_contents( $the_content ){
                 if( ! preg_match_all($idpattern, $tags[0][$i], $idstr) ){
                     //見出しタグにidが定義されていない場合、「autoid_1」のようなidを自動設定
                     $idstr[1][0] = 'autoid_'.$idnum++;
-                    $the_content = preg_replace( "/".str_replace('/', '\/' ,$tags[0][$i])."/", preg_replace('/(^<h[2-6])/i', '${1} id="' . $idstr[1][0] . '" ' , $tags[0][$i]), $the_content,1);
+										//下記でエラー発生。一時的にコメントアウト
+                    //$the_content = preg_replace( "/".str_replace('/', '\/' ,$tags[0][$i])."/", preg_replace('/(^<h[2-6])/i', '${1} id="' . $idstr[1][0] . '" ' , $tags[0][$i]), $the_content,1);
                 }
                 //見出しへのリンクを目次に追加。<li>でリスト形式に。
                 $table_of_contents .= '<li><a href="#' . $idstr[1][0] . '">' . $tags[1][$i] .'</a>';
