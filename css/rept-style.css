@@ -232,3 +232,31 @@ div.table-of-contents:before {
 .table-of-contents li a{
   color: black;
 }
+/* パンくずリスト */
+/* パンくずリスト */
+.breadcrumb ul{
+  list-style: none;
+  font-size: .8em;
+}
+.breadcrumb li{
+  display: inline;
+}
+.breadcrumb li a{
+  color: gray;
+  text-decoration: none;
+}
+.breadcrumb li + li:before{
+  content: ">";
+  margin-right:.3em;
+  color: gray;
+}
+div.breadcrumb{
+  background-color: white;
+  margin-bottom: 0px;
+}
+div.category {
+  margin: 5px 10px 18px 10px;
+  padding: 5px 10px;
+  display:inline-block;
+  background-color: whitesmoke;
+}
