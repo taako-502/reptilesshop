@@ -227,6 +227,7 @@ div.table-of-contents:before {
 .table-of-contents li{
   list-style-type:decimal;  /* マークの種類 */
   color: gray;
+  margin-top:5px;
 }
 .table-of-contents li a{
   color: black;
