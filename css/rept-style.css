@@ -1,118 +1,148 @@
 @charset "UTF-8";
+
 body {
   background-color: whitesmoke;
 }
+
 /* ワイヤー部分 */
 div.main-area {
   width: 90%;
   margin: 40px 0 40px 0;
   padding: 20px 30px;
-  box-shadow: 2px 2px 5px 0 gray ;
+  box-shadow: 2px 2px 5px 0 gray;
   background-color: white;
 }
+
 div.main-area * {
   /* 影の設定が子孫に反映されるため、解除 */
-  box-shadow: none ;
+  box-shadow: none;
 }
+
 .site-sidebar {
   background-color: white;
   width: 100%;
-  margin:40px 0 40px 0;
-  padding:20px 15px;
-  box-shadow: 2px 2px 5px 0 gray ;
+  margin: 40px 0 40px 0;
+  padding: 20px 15px;
+  box-shadow: 2px 2px 5px 0 gray;
 }
+
 .site-footer {
   background-color: blue;
 }
+
 .site-header {
   background-color: white;
 }
+
 /* トップページのサムネイル */
 .article-area {
   /*display:flex;*/
 }
+
 .size-post-thumbnail {
   padding: 20px 1%;
 }
+
 .size-post-thumbnail img {
   display: block;
   margin: auto;
   max-width: 95%;
 }
+
 .article-describe {
-  width:50px;
+  width: 50px;
   padding: 15px 20px 15px 20px;
 }
+
 div.article-describe p {
   margin-left: 10px;
   color: gray;
 }
+
 div.article-describe h3 {
   color: #333;
   font-size: 22px;
   margin-bottom: 14px;
 }
+
 div.article-describe a {
   text-decoration: none;
 }
+
 .article-one {
-  width:90%;
-  height:90%;
-  box-shadow: 2px 2px 5px 0 gray !Important ;
+  width: 90%;
+  height: 90%;
+  box-shadow: 2px 2px 5px 0 gray !Important;
 }
+
 /****** ヘッダー ******/
 header#masthead {
-  background-color: #DDDDDD	;
+  background-color: #DDDDDD;
 }
+
 div.site-branding {
-  display:flex;
+  display: flex;
 }
+
 /* カスタマーヘッダー */
 img.cus-header-img {
-  display:block;
-  margin-left:auto;
-  margin-right:auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 p.cus-header-area {
   padding-top: 5px;
   padding-bottom: 5px;
 }
+
 /* サイトタイトル */
 div.site-title-area {
-  padding-right:5px;
+  padding-right: 5px;
 }
+
 h1.site-title {
-  font-size: 42px;
-  display:inline;
+  font-size: 30px;
+  display: block;
   margin: 5px 10px 0 20px;
 }
+
 h1.site-title a {
   text-decoration: none;
 }
+
 /* サイトディスクリプション */
 div.discription-area {
-
+  background-color: pink
 }
+
 p.site-description {
   margin-left: 20px;
+  background-color: red;
 }
+
 /* メニュー */
 div.site-branding {
   background-color: #333;
 }
+
 div.menu-area {
-  float:right;
+  float: right;
 }
+
 h1.site-title a {
   color: white;
 }
+
 p.site-description {
-  color:white;
+  color: white;
 }
+
 div.menu-area ul {
-  list-style:none;
-  display:flex;
+  list-style: none;
+  display: flex;
 }
+
 div.menu-area li {
   background-color: #333;
   padding: 8px 6px;
@@ -120,44 +150,53 @@ div.menu-area li {
   border: 1.5px solid white;
   border-radius: 1px;
 }
+
 div.menu-area li a {
   color: white;
 }
+
 /****** サイドバー ******/
 .site-sidebar h2 {
-  font-size:24px;
+  font-size: 24px;
   border-bottom: 2px solid blue;
 }
+
 .site-sidebar ul {
   list-style: none;
   margin-left: 0;
   padding-left: 5px;
 }
+
 /****** フッター ******/
 footer#colophon {
   background-color: #333;
-  padding:10px 0 10px 20px;
+  padding: 10px 0 10px 20px;
 }
+
 .site-footer a,
 .site-footer span {
   color: white;
 }
+
 /****** 部品 ******/
 /* 関連記事 */
 .relatedkiji {
   margin: 40px 0 0;
   padding: 10px;
 }
+
 .relatedkiji h4 {
   font-size: 1.25em;
   padding: 3px 5px;
   border-bottom: solid 1px #999;
 }
+
 .relatedkiji ul {
   font-size: 0;
   margin: 10px 0;
   padding: 0;
 }
+
 .relatedkiji li {
   display: inline-block;
   -webkit-box-sizing: border-box;
@@ -168,101 +207,129 @@ footer#colophon {
   list-style: none;
   vertical-align: top;
 }
+
 .relatedkiji li a {
   display: block;
   text-decoration: none;
   color: #000;
 }
+
 .relatedkiji li a:hover {
   color: #000070;
   background-color: #eee;
 }
+
 .relatedkiji img {
   height: 120px;
   object-fit: cover;
 }
+
 .relatedkiji .text {
   font-size: 16px;
   font-weight: bold;
 }
+
 @media (max-width: 599px) {
   .relatedkiji ul {
     margin: 0;
   }
+
   .relatedkiji li {
     display: block;
     width: 100%;
   }
+
   .relatedkiji li a:after {
     display: block;
     clear: both;
     content: '';
   }
+
   .relatedkiji img {
     float: left;
     width: 90px;
     height: 70px;
   }
+
   .relatedkiji .text {
     width: auto;
     margin-top: 5px;
     margin-left: 100px;
   }
 }
+
 /* 目次 */
 div.table-of-contents {
-  border:solid 2px #7DB4EC;  /* 線の種類と色 */
-  padding: 15px 10px 15px 35px;  /* 枠内の余白（上右下左） */
+  border: solid 2px #7DB4EC;
+  /* 線の種類と色 */
+  padding: 15px 10px 15px 35px;
+  /* 枠内の余白（上右下左） */
   margin: 1.5em 2em;
-  background:#f7f7f7;  /* 背景 */
-  font-size: 100%;  /* 文字サイズ */
-  border-radius:8px;/* 数字が大きいほど丸くなる */
+  background: #f7f7f7;
+  /* 背景 */
+  font-size: 100%;
+  /* 文字サイズ */
+  border-radius: 8px;
+  /* 数字が大きいほど丸くなる */
 }
+
 div.table-of-contents:before {
-    content: "目次";
-    font-size: 110%;
-    font-weight:bold;   /* 文字の太さ　通常はnormal */
-    color:#000;  /* 文字の色 */
+  content: "目次";
+  font-size: 110%;
+  font-weight: bold;
+  /* 文字の太さ　通常はnormal */
+  color: #000;
+  /* 文字の色 */
 }
-.table-of-contents li{
+
+.table-of-contents li {
   color: gray;
-  margin-top:5px;
+  margin-top: 5px;
 }
+
 .table-of-contents ul {
   counter-reset: section;
   list-style: none;
 }
-.table-of-contents ul > li:before {
-    content : counters(section, '-') '. ';
-    counter-increment : section;
+
+.table-of-contents ul>li:before {
+  content: counters(section, '-') '. ';
+  counter-increment: section;
 }
-.table-of-contents li a{
+
+.table-of-contents li a {
   color: black;
 }
+
 /* パンくずリスト */
-.breadcrumb ul{
+.breadcrumb ul {
   list-style: none;
   font-size: .8em;
 }
-.breadcrumb li{
+
+.breadcrumb li {
   display: inline;
 }
-.breadcrumb li a{
+
+.breadcrumb li a {
   color: gray;
   text-decoration: none;
 }
-.breadcrumb li + li:before{
+
+.breadcrumb li+li:before {
   content: ">";
-  margin-right:.3em;
+  margin-right: .3em;
   color: gray;
 }
-div.breadcrumb{
+
+div.breadcrumb {
   background-color: white;
   margin-bottom: 0px;
 }
+
 div.category {
   margin: 5px 10px 18px 10px;
   padding: 5px 10px;
-  display:inline-block;
+  display: inline-block;
   background-color: whitesmoke;
 }
