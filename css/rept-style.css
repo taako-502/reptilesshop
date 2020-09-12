@@ -55,15 +55,15 @@ div.main-area * {
   padding: 15px 20px 15px 20px;
 }
 
-div.article-describe p {
-  margin-left: 10px;
-  color: gray;
-}
-
 div.article-describe h3 {
   color: #333;
-  font-size: 22px;
-  margin-bottom: 14px;
+  font-size: 18px;
+}
+
+div.article-describe p {
+  margin-left: 0.2em 0 0 0.2em;
+  font-size: 14px;
+  color: gray;
 }
 
 div.article-describe a {
