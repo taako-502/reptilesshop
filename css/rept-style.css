@@ -349,18 +349,28 @@ div.category {
   }
 }
 
+/* 画面が狭まった場合 */
 @media screen and (max-width: 992px) {
+  /* 全体 */
   div.container {
     padding: 0;
   }
 
-  div.row {
+  div.container > div.row {
     margin-left: 0;
     width: 100%;
   }
-
+  /* メインエリア */
   div.main-area {
     width: 100%;
   }
-  
+  div.container > div.row > div.col-lg-3 {
+    margin-left: 0;
+    padding: 0;
+    width: 100%;
+  }
+  /* サイドバー*/
+  aside#secondary {
+    margin: 0 0 40px 0;
+  }
 }
