@@ -13,7 +13,7 @@
 		<div class="article-thumbnail col-sm-12 col-md-4">
 			<?php reptilesshop_post_thumbnail(); ?>
 		</div>
-		<div class="article-describe col-sm-12  col-md-8">
+		<div class="article-describe col-sm-12 col-md-8">
 			<a class="apermalink" href="<?php echo get_permalink(); ?>">
 	    	<h3><?php echo the_title( '' , '' , false ); ?></h3>
 				<div class="except">
