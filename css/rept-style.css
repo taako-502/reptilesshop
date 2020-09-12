@@ -338,14 +338,6 @@ div.category {
 
 /* タブレットサイズ */
 @media screen and (max-width:768px) {
-  div.row {
-    margin-left: 0;
-    width: 100%;
-  }
-  div.main-area {
-    width: 100%;
-  }
-
   div.article-thumbnail {
     padding-left: 0;
     padding-right: 0;
@@ -355,4 +347,20 @@ div.category {
     background-color: red;
     padding: 0;
   }
+}
+
+@media screen and (max-width: 992px) {
+  div.container {
+    padding: 0;
+  }
+
+  div.row {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  div.main-area {
+    width: 100%;
+  }
+  
 }
