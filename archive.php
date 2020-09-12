@@ -12,7 +12,7 @@ get_header();
 <main id="primary" class="site-main">
 	<div class="container">
 		<div class="row">
-			<div class="main-area col-md-9">
+			<div class="main-area col-lg-9">
 				<?php if ( have_posts() ) : ?>
 					<header class="page-header">
 						<?php
@@ -38,7 +38,7 @@ get_header();
 				endif;
 				?>
 			</div>
-			<div class="col-md-3">
+			<div class="col-lg-3">
 				<?php get_sidebar(); ?>
 			</div>
 		</div>
