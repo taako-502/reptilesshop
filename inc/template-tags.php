@@ -112,7 +112,7 @@ if ( ! function_exists( 'reptilesshop_entry_footer' ) ) :
 	}
 endif;
 
-if ( ! function_exists( 'reptilesshop_post_thumbnail' ) ) :
+if ( ! function_exists( 'reptilesshop_post_thumbnail' ) ) {
 	/**
 	 * Displays an optional post thumbnail.
 	 *
@@ -120,38 +120,46 @@ if ( ! function_exists( 'reptilesshop_post_thumbnail' ) ) :
 	 * element when on single views.
 	 */
 	function reptilesshop_post_thumbnail() {
-		if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
+		if ( post_password_required() || is_attachment() ) {
 			return;
 		}
 
-		if ( is_singular() ) :
-			?>
+		if( has_post_thumbnail() ) {
+			// サムネイルが登録している場合、サムネイルを表示
+			if ( is_singular() ){ ?>
 
-			<div class="post-thumbnail">
-				<?php the_post_thumbnail(); ?>
-			</div><!-- .post-thumbnail -->
+				<div class="post-thumbnail">
+					<?php the_post_thumbnail(); ?>
+				</div><!-- .post-thumbnail -->
 
-		<?php else : ?>
+			<?php } else { ?>
 
-			<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
+				<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
+					<?php
+						the_post_thumbnail(
+							'post-thumbnail',
+							array(
+								'alt' => the_title_attribute(
+									array(
+										'echo' => false,
+									)
+								),
+							)
+						);
+					?>
+				</a>
 				<?php
-					the_post_thumbnail(
-						'post-thumbnail',
-						array(
-							'alt' => the_title_attribute(
-								array(
-									'echo' => false,
-								)
-							),
-						)
-					);
-				?>
-			</a>
-
+			}
+		} else {
+			// サムネイルが登録されていない場合、デフォルトのサムネイルを表示
+			?>
+				<div class="post-thumbnail">
+					<img class="attachment-post-thumbnail size-post-thumbnail wp-post-image" src="<?php echo get_bloginfo( 'stylesheet_directory' ); ?>/images/thumbnail-default.jpg" />
+				</div>
 			<?php
-		endif; // End is_singular().
+		}
 	}
-endif;
+}
 
 if ( ! function_exists( 'wp_body_open' ) ) :
 	/**
