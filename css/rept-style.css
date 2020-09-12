@@ -112,13 +112,8 @@ h1.site-title a {
 }
 
 /* サイトディスクリプション */
-div.discription-area {
-  background-color: pink
-}
-
 p.site-description {
   margin-left: 20px;
-  background-color: red;
 }
 
 /* メニュー */
