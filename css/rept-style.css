@@ -86,30 +86,30 @@ div.site-branding {
   display: flex;
 }
 
-/* サイトタイトル */
-div.site-info {
+/* サイトタイトル & ディスクリプション */
+div.site-info-header {
   width: 300px;
 }
 
 div.site-title-area {
   width: 100%;
-  background-color: blue;
   padding-right: 5px;
 }
 
-h1.site-title {
-  font-size: 30px;
+h1.site-title_test {
   display: block;
   margin: 5px 10px 0 20px;
 }
 
-h1.site-title a {
+h1.site-title_test a {
   text-decoration: none;
+  font-size: 24px;
+  color: white;
 }
 
-/* サイトディスクリプション */
-p.site-description {
-  margin-left: 20px;
+p.site-description_test {
+  margin:0.2em 0 0.2em 20px;
+  color: dimgray;
 }
 
 /* メニュー */
@@ -123,14 +123,6 @@ div.menu-area {
 
 div.main-menu {
   margin: 0 0 0 auto;
-}
-
-h1.site-title a {
-  color: white;
-}
-
-p.site-description {
-  color: white;
 }
 
 div.menu-area ul {

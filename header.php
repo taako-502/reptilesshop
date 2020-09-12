@@ -33,17 +33,17 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'reptilesshop' ); ?></a>
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
-			<div class="site-info">
+			<div class="site-info-header">
 				<div class="site-title-area">
 					<?php the_custom_logo(); ?>
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<h1 class="site-title_test"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				</div>
 				<div class="discription-area">
 					<?php
 					$reptilesshop_description = get_bloginfo( 'description', 'display' );
 					if ( $reptilesshop_description || is_customize_preview() ) :
 						?>
-						<p class="site-description"><?php echo $reptilesshop_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+						<p class="site-description_test"><?php echo $reptilesshop_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 					<?php endif; ?>
 				</div>
 			</div>
