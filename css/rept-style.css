@@ -114,13 +114,16 @@ p.site-description {
 }
 
 /* メニュー */
-
 div.site-branding {
   background-color: #333;
 }
 
 div.menu-area {
   float: right;
+}
+
+div.main-menu {
+  margin: 0 0 0 auto;
 }
 
 h1.site-title a {
@@ -134,6 +137,7 @@ p.site-description {
 div.menu-area ul {
   list-style: none;
   display: flex;
+  margin: 0;
   padding: 0;
 }
 
