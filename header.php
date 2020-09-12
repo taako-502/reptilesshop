@@ -31,13 +31,12 @@
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'reptilesshop' ); ?></a>
-
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<div class="site-info">
 				<div class="site-title-area">
 					<?php the_custom_logo(); ?>
-						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				</div>
 				<div class="discription-area">
 					<?php
@@ -48,7 +47,6 @@
 					<?php endif; ?>
 				</div>
 			</div>
-			<nav id="site-navigation" class="main-navigation">
 			<div class="menu-area">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'reptilesshop' ); ?></button>
 				<?php
@@ -60,7 +58,6 @@
 				);
 				?>
 			</div>
-			</nav>
 		</div><!-- .site-branding -->
 		<nav id="site-navigation" class="main-navigation">
 			<p class="cus-header-area">

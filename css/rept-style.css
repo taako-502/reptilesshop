@@ -86,20 +86,15 @@ div.site-branding {
   display: flex;
 }
 
-/* カスタマーヘッダー */
-img.cus-header-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-p.cus-header-area {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
 /* サイトタイトル */
+div.site-info {
+  width: 300px;
+  background-color: red;
+}
+
 div.site-title-area {
+  width: 100%;
+  background-color: blue;
   padding-right: 5px;
 }
 
@@ -119,6 +114,7 @@ p.site-description {
 }
 
 /* メニュー */
+
 div.site-branding {
   background-color: #333;
 }
@@ -138,6 +134,7 @@ p.site-description {
 div.menu-area ul {
   list-style: none;
   display: flex;
+  padding: 0;
 }
 
 div.menu-area li {
@@ -150,6 +147,18 @@ div.menu-area li {
 
 div.menu-area li a {
   color: white;
+}
+
+/* カスタマーヘッダー */
+img.cus-header-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p.cus-header-area {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 /****** サイドバー ******/
