@@ -149,7 +149,7 @@ div.menu-area li a {
   display:block;
   font-weight:bold;
   padding: 2em;
-  border-bottom: 1px dotted #CCC;
+  border-bottom: 1px dotted white;
   text-decoration:none;
 }
 
@@ -160,9 +160,9 @@ color:orange;}
 .main-menu {
   text-align:center;
   background-color:rgba(255,255,255,0.5);
-  transition: .5s ease;/*滑らかに表示*/
-  -webkit-transform: translateX(-105%);
-  transform: translateX(-105%);/*左に隠しておく*/
+  /*transition: .1s ease;*//*滑らかに表示*/
+  -webkit-transform: translateX(-105vw);
+  transform: translateX(-105vw);/*左に隠しておく*/
 }
 
 /*OPEN時の動き*/
@@ -220,33 +220,36 @@ color:orange;}
   transform: rotate(45deg);
 }
 
-@media screen and (max-width: 37.5em) {
-
-  header::after{
+@media screen and (min-width: 959px) {
+  header::after {
     display:none;
   }
 
-  nav{
+  nav {
     display: flex;
   }
-  .menu-toggle{
+
+  .menu-toggle {
     display: none;
   }
-  .main-menu{
+
+  .main-menu {
    width: 100%;
     background-color: transparent;
     margin-top:0;
    -webkit-transform: translateX(0);
    transform: translateX(0);
   }
-  .main-menu ul{
+
+  .main-menu ul {
    height: 70px;
    display: flex;
-   flex-wrap: wrap;
+   flex-wrap: nowrap;
    justify-content: flex-end;
    align-items: center;
   }
-  .main-menu ul li a{
+
+  .main-menu ul li a {
     padding: 0 1em;
     border-bottom: none;
   }
