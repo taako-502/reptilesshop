@@ -1,6 +1,14 @@
 # reptilesshop
  爬虫類ショップをイメージしたWordPressのテーマです。
 
+## 参考文献
+### メニュー関連
+ハンバーガーメニュー<br>
+- 基礎的なところ<br>
+  https://cocohp.com/8027/
+- デザイン<br>
+  https://125naroom.com/web/2958
+
 [![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
 
 _s

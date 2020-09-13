@@ -144,6 +144,7 @@ function reptilesshop_scripts() {
 	wp_style_add_data( 'reptilesshop-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'reptilesshop-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'reptilesshop-header', get_template_directory_uri() . '/js/header.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
