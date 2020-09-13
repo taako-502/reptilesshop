@@ -143,6 +143,12 @@ div.menu-area li {
 div.menu-area li a {
   color: white;
 }
+  
+@media screen and (max-width: 37.5em) {
+  div.menu-area ul {
+    display: none;
+  }
+}
 
 /* カスタマーヘッダー */
 img.cus-header-img {
