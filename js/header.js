@@ -1,9 +1,9 @@
 /**
  * headerのjavascriptの設定
  */
-$(function(){
-  $('.menu-toggle').on('click', function() {
-    $(this).toggleClass('active');
-    return false;
+( function() {
+　jQuery('.menu-toggle').click(function() {
+    jQuery(this).toggleClass('active');
+    jQuery('.main-menu').toggleClass('open');
   });
-});
+}() );
