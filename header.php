@@ -49,9 +49,6 @@
 					</div>
 				</div>
 				<div class="menu-area">
-					<!--button id="menu-btn" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-						<?php //esc_html_e( 'Primary Menu', 'reptilesshop' ); ?>
-					</button-->
 					<div class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
 					　　<span></span>
 					　　<span></span>
