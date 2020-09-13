@@ -174,7 +174,7 @@ color:orange;}
 /*トグルボタンのスタイルを指定*/
 .menu-toggle {
   display: block;
-  position: fixed;    /* bodyに対しての絶対位置指定 */
+  position: absolute;
   width: 42px;
   height: 42px;
   cursor: pointer;
