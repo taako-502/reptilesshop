@@ -143,7 +143,7 @@ div.menu-area li {
 div.menu-area li a {
   color: white;
 }
-  
+
 @media screen and (max-width: 37.5em) {
   div.menu-area ul {
     display: none;
@@ -153,13 +153,7 @@ div.menu-area li a {
 /* カスタマーヘッダー */
 img.cus-header-img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-p.cus-header-area {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  width: 100vw;
 }
 
 /****** サイドバー ******/
