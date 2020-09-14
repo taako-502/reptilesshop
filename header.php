@@ -48,23 +48,21 @@
 						<?php endif; ?>
 					</div>
 				</div>
-				<div class="menu-area">
-					<div class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-					　　<span></span>
-					　　<span></span>
-					　　<span></span>
-					</div>
-					<?php
-					wp_nav_menu(
-						array(
-							'theme_location' => 'menu-1',
-							'menu_id'        => 'primary-menu',
-							'container_class'=> 'main-menu',
-						)
-					);
-					?>
+				<div class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+					<span></span>
+				　<span></span>
+				　<span></span>
 				</div>
 			</div><!-- .site-branding -->
+			<?php
+			wp_nav_menu(
+				array(
+					'theme_location' => 'menu-1',
+					'menu_id'        => 'primary-menu',
+					'container_class'=> 'main-menu',
+				)
+			);
+			?>
 			<p class="cus-header-area">
 				<?php the_header_image_tag("class=cus-header-img"); ?>
 			</p>
