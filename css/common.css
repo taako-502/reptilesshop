@@ -681,7 +681,7 @@ textarea {
 	display: block;
 }
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 959px) {
 
 	.menu-toggle {
 		display: none;
