@@ -88,6 +88,11 @@ div.site-branding {
   display: flex;
 }
 
+div.site-info-header {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* サイトタイトル */
 h1.site-title_test a {
   text-decoration: none;
