@@ -132,7 +132,7 @@ div.menu-area li {
   color: white;
   display:block;
   font-weight:bold;
-  padding: 2em;
+  padding: 5px;
   text-decoration:none;
 }
 
@@ -262,7 +262,7 @@ color:orange;}
    justify-content: flex-end;
    align-items: center;
   }
-  
+
   div.menu-area li {
     padding: 8px 6px;
     margin: 5px 2px;
