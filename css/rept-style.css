@@ -78,45 +78,35 @@ div.article-describe a {
 }
 
 /****** ヘッダー ******/
+/* ヘッダーはモバイルファーストでCSSを記述 */
 header#masthead {
-  background-color: #DDDDDD;
+  background-color: #333;
+  padding-top: 0.2em;
 }
 
 div.site-branding {
   display: flex;
 }
 
-/* サイトタイトル & ディスクリプション */
-div.site-info-header {
-  width: 300px;
-}
-
-div.site-title-area {
-  width: 100%;
-  padding-right: 5px;
-}
-
-h1.site-title_test {
-  display: block;
-  margin: 5px 10px 0 20px;
-}
-
+/* サイトタイトル */
 h1.site-title_test a {
   text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 24px;
   color: white;
 }
 
+h1.site-title_test {
+  text-align: center;
+  min-width: 300px;
+}
+
 p.site-description_test {
-  margin:0.2em 0 0.2em 20px;
-  color: dimgray;
+  text-align: center;
 }
 
 /* メニュー */
-div.site-branding {
-  background-color: #333;
-}
-
 div.menu-area {
   margin: 0 0 0 auto;
 }
@@ -134,18 +124,12 @@ div.menu-area ul {
 
 div.menu-area li {
   background-color: #333;
-  padding: 8px 6px;
-  margin: 5px 2px;
   border: 1.5px solid white;
   border-radius: 1px;
 }
 
-div.menu-area li a {
-  color: white;
-}
-
-/* メニューのレスポンシブ */
 .main-menu ul li a {
+  color: white;
   display:block;
   font-weight:bold;
   padding: 2em;
@@ -219,7 +203,34 @@ color:orange;}
   transform: rotate(45deg);
 }
 
+/* PC版ヘッダーを記述 */
 @media screen and (min-width: 959px) {
+
+  /* サイトタイトル & ディスクリプション */
+  div.site-info-header {
+    width: 300px;
+  }
+
+  div.site-title-area {
+    width: 100%;
+    padding-right: 5px;
+  }
+
+  h1.site-title_test {
+    display: block;
+    margin: 5px 10px 0 20px;
+  }
+
+  h1.site-title_test a {
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+  }
+
+  p.site-description_test {
+    margin:0.2em 0 0.2em 20px;
+    color: dimgray;
+  }
   header::after {
     display:none;
   }
@@ -241,11 +252,18 @@ color:orange;}
   }
 
   .main-menu ul {
+    margin: 0;
+    padding: 0;
    height: 70px;
    display: flex;
    flex-wrap: nowrap;
    justify-content: flex-end;
    align-items: center;
+  }
+
+  div.menu-area li {
+    padding: 8px 6px;
+    margin: 5px 2px;
   }
 
   .main-menu ul li a {
