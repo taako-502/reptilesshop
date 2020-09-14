@@ -130,28 +130,32 @@ div.main-menu li {
 
 .main-menu ul li a {
   color: white;
-  display:block;
-  font-weight:bold;
+  display: block;
+  font-weight: bold;
   padding: 5px;
-  text-decoration:none;
+  text-decoration: none;
 }
 
-.main-menu ul li a:hover
-{background-color:rgba(0,0,0,0.5);
-color:orange;}
+.main-menu ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: orange;
+}
 
 .main-menu {
-  text-align:center;
-  background-color:rgba(255,255,255,0.5);
-  /*transition: .1s ease;*//*滑らかに表示*/
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  /*transition: .1s ease;*/
+  /*滑らかに表示*/
   -webkit-transform: translateX(-105vw);
-  transform: translateX(-105vw);/*左に隠しておく*/
+  transform: translateX(-105vw);
+  /*左に隠しておく*/
 }
 
 /*OPEN時の動き*/
 .main-menu.open {
   -webkit-transform: translateX(0%);
-  transform: translateX(0%);/*中身を表示（右へスライド）*/
+  transform: translateX(0%);
+  /*中身を表示（右へスライド）*/
 }
 
 /*トグルボタンのスタイルを指定*/
@@ -162,7 +166,7 @@ color:orange;}
   height: 42px;
   cursor: pointer;
   z-index: 3;
-  right:15px;
+  right: 15px;
 }
 
 .menu-toggle span {
@@ -170,13 +174,16 @@ color:orange;}
   position: absolute;
   width: 50px;
   border-bottom: solid 4px white;
-  -webkit-transition: .35s ease-in-out;   /*変化の速度を指定*/
-  -moz-transition: .35s ease-in-out;      /*変化の速度を指定*/
-  transition: .35s ease-in-out;           /*変化の速度を指定*/
+  -webkit-transition: .35s ease-in-out;
+  /*変化の速度を指定*/
+  -moz-transition: .35s ease-in-out;
+  /*変化の速度を指定*/
+  transition: .35s ease-in-out;
+  /*変化の速度を指定*/
 }
 
 .menu-toggle span:nth-child(1) {
-  top:5px;
+  top: 5px;
 }
 
 .menu-toggle span:nth-child(2) {
@@ -229,12 +236,13 @@ color:orange;}
   }
 
   p.site-description_test {
-    margin:0.2em 0 0.2em 20px;
+    margin: 0.2em 0 0.2em 20px;
     color: dimgray;
     text-align: left;
   }
+
   header::after {
-    display:none;
+    display: none;
   }
 
   nav {
@@ -246,21 +254,21 @@ color:orange;}
   }
 
   .main-menu {
-   width: 100%;
+    width: 100%;
     background-color: transparent;
-    margin-top:0;
-   -webkit-transform: translateX(0);
-   transform: translateX(0);
+    margin-top: 0;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 
   div.main-menu ul {
     margin: 0;
     padding: 0;
-   height: 70px;
-   display: flex;
-   flex-wrap: nowrap;
-   justify-content: flex-end;
-   align-items: center;
+    height: 70px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
   }
 
   div.main-menu li {
@@ -274,7 +282,7 @@ color:orange;}
   }
 
   .main-menu ul li a:hover {
-    background-color:transparent;
+    background-color: transparent;
   }
 }
 
@@ -464,9 +472,7 @@ div.category {
 }
 
 /* スマホサイズ */
-@media screen and (max-width:576px) {
-
-}
+@media screen and (max-width:576px) {}
 
 /* タブレットサイズ */
 @media screen and (max-width:768px) {
@@ -482,24 +488,28 @@ div.category {
 
 /* 画面が狭まった場合 */
 @media screen and (max-width: 992px) {
+
   /* 全体 */
   div.container {
     padding: 0;
   }
 
-  div.container > div.row {
+  div.container>div.row {
     margin-left: 0;
     width: 100%;
   }
+
   /* メインエリア */
   div.main-area {
     width: 100%;
   }
-  div.container > div.row > div.col-lg-3 {
+
+  div.container>div.row>div.col-lg-3 {
     margin-left: 0;
     padding: 0;
     width: 100%;
   }
+
   /* サイドバー*/
   aside#secondary {
     margin: 0 0 40px 0;
