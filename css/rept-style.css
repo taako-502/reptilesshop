@@ -117,7 +117,7 @@ div.main-menu {
 
 div.menu-area ul {
   list-style: none;
-  display: flex;
+  display: block;
   margin: 0;
   padding: 0;
 }
@@ -253,7 +253,7 @@ color:orange;}
    transform: translateX(0);
   }
 
-  .main-menu ul {
+  div.main-menu ul {
     margin: 0;
     padding: 0;
    height: 70px;
@@ -262,7 +262,7 @@ color:orange;}
    justify-content: flex-end;
    align-items: center;
   }
-
+  
   div.menu-area li {
     padding: 8px 6px;
     margin: 5px 2px;
