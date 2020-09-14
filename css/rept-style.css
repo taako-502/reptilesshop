@@ -212,6 +212,17 @@ div.main-menu li {
 
 /* PC版ヘッダーを記述 */
 @media screen and (min-width: 959px) {
+  div.drawer {
+    display: flex;
+  }
+
+  div.site-branding {
+    width: 300px;
+  }
+
+  div.main-menu {
+    width: 600px;
+  }
 
   /* サイトタイトル & ディスクリプション */
   div.site-info-header {
@@ -243,10 +254,6 @@ div.main-menu li {
 
   header::after {
     display: none;
-  }
-
-  nav {
-    display: flex;
   }
 
   .menu-toggle {

@@ -33,36 +33,38 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'reptilesshop' ); ?></a>
 	<header id="masthead" class="site-header">
 		<nav id="site-navigation" class="main-navigation">
-			<div class="site-branding">
-				<div class="site-info-header">
-					<div class="site-title-area">
-						<?php the_custom_logo(); ?>
-						<h1 class="site-title_test"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<div class="drawer">
+				<div class="site-branding">
+					<div class="site-info-header">
+						<div class="site-title-area">
+							<?php the_custom_logo(); ?>
+							<h1 class="site-title_test"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+						</div>
+						<div class="discription-area">
+							<?php
+							$reptilesshop_description = get_bloginfo( 'description', 'display' );
+							if ( $reptilesshop_description || is_customize_preview() ) :
+								?>
+								<p class="site-description_test"><?php echo $reptilesshop_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+							<?php endif; ?>
+						</div>
 					</div>
-					<div class="discription-area">
-						<?php
-						$reptilesshop_description = get_bloginfo( 'description', 'display' );
-						if ( $reptilesshop_description || is_customize_preview() ) :
-							?>
-							<p class="site-description_test"><?php echo $reptilesshop_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-						<?php endif; ?>
+					<div class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+						<span></span>
+					　<span></span>
+					　<span></span>
 					</div>
-				</div>
-				<div class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-					<span></span>
-				　<span></span>
-				　<span></span>
-				</div>
-			</div><!-- .site-branding -->
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-					'container_class'=> 'main-menu',
-				)
-			);
-			?>
+				</div><!-- .site-branding -->
+				<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'primary-menu',
+						'container_class'=> 'main-menu',
+					)
+				);
+				?>
+			</div>
 			<p class="cus-header-area">
 				<?php the_header_image_tag("class=cus-header-img"); ?>
 			</p>
