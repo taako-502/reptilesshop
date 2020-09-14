@@ -225,11 +225,13 @@ color:orange;}
     text-decoration: none;
     font-size: 24px;
     color: white;
+    text-align: left;
   }
 
   p.site-description_test {
     margin:0.2em 0 0.2em 20px;
     color: dimgray;
+    text-align: left;
   }
   header::after {
     display:none;
