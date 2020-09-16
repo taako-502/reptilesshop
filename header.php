@@ -51,8 +51,8 @@
 					</div>
 					<div class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
 						<span></span>
-					　<span></span>
-					　<span></span>
+					  <span></span>
+					  <span></span>
 					</div>
 				</div><!-- .site-branding -->
 				<?php
