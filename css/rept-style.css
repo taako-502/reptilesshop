@@ -155,21 +155,15 @@ div.main-menu li {
   color: orange;
 }
 
-.main-menu {
+div.main-menu {
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.5);
-  /*transition: .1s ease;*/
-  /*滑らかに表示*/
-  -webkit-transform: translateX(-105vw);
-  transform: translateX(-105vw);
-  /*左に隠しておく*/
 }
 
 /*OPEN時の動き*/
 .main-menu.open {
+  /*中身を表示（右へスライド）*/
   -webkit-transform: translateX(0%);
   transform: translateX(0%);
-  /*中身を表示（右へスライド）*/
 }
 
 /*トグルボタンのスタイルを指定*/
