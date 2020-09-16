@@ -8,6 +8,8 @@
   https://cocohp.com/8027/
 - デザイン<br>
   https://125naroom.com/web/2958
+- 最終的な動き
+  https://lopan.jp/css-animation-drawer/#mechanism
 
 [![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
 
