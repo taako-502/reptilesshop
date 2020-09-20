@@ -2,11 +2,12 @@
  * Guternbergのカスタマイズ
  */
 (function() {
-  // ボックス
+  // テキスト動的入力の設定
   var el = wp.element.createElement,
     blocks = wp.blocks,
     RichText = wp.editor.RichText;
 
+  // ボックス
   blocks.registerBlockType('reptilesshop/box', {
     title: 'ボックス',
     icon: 'admin-page',
@@ -52,10 +53,6 @@
     },
   });
   //点線ボックス
-  var el = wp.element.createElement,
-    blocks = wp.blocks,
-    RichText = wp.editor.RichText;
-
   blocks.registerBlockType('reptilesshop/box-dot', {
     title: '点線ボックス',
     icon: 'admin-page',
