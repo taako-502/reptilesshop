@@ -6,6 +6,10 @@
 WordPressの新エディタ「Guternberg」でカスタムブロックを追加する方法（基礎編）<br>
 https://wemo.tech/2163
 
+- カラーパレット
+- ふきだし
+https://wap-log.com/wordpress-balloon-css-html/
+
 ### メニュー関連
 ドロワーメニュー（ハンバーガーメニュー）<br>
 - 基礎的なところ<br>
