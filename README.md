@@ -2,13 +2,17 @@
  爬虫類ショップをイメージしたWordPressのテーマです。
 
 ## 参考文献
+### カスタマイザー
+- カスタマイザーのカスタマイズ方法！自由度の高いテーマ作りができるようになります<br>
+  https://haniwaman.com/customizer/#i
+
 ### Guternberg（ブロックエディタ）
 WordPressの新エディタ「Guternberg」でカスタムブロックを追加する方法（基礎編）<br>
 https://wemo.tech/2163
 
 - カラーパレット
 - ふきだし
-https://wap-log.com/wordpress-balloon-css-html/
+  https://wap-log.com/wordpress-balloon-css-html/
 
 ### メニュー関連
 ドロワーメニュー（ハンバーガーメニュー）<br>
@@ -18,6 +22,8 @@ https://wap-log.com/wordpress-balloon-css-html/
   https://125naroom.com/web/2958
 - 最終的な動き
   https://lopan.jp/css-animation-drawer/#mechanism
+
+<hr>
 
 [![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
 
