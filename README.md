@@ -23,6 +23,16 @@ https://wemo.tech/2163
 - 最終的な動き
   https://lopan.jp/css-animation-drawer/#mechanism
 
+## 開発環境
+### ローカルサーバ
+Local
+
+### SQLクライアント
+HeidiSQL
+
+### エディタ
+Atom
+
 <hr>
 
 [![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
