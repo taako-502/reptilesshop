@@ -11,7 +11,7 @@ WordPressの新エディタ「Guternberg」でカスタムブロックを追加�
 https://wemo.tech/2163
 
 - カラーパレット
-- ふきだし
+- ふきだし<br>
   https://wap-log.com/wordpress-balloon-css-html/
 
 ### メニュー関連
@@ -20,7 +20,7 @@ https://wemo.tech/2163
   https://cocohp.com/8027/
 - デザイン<br>
   https://125naroom.com/web/2958
-- 最終的な動き
+- 最終的な動き<br>
   https://lopan.jp/css-animation-drawer/#mechanism
 
 ## 開発環境
